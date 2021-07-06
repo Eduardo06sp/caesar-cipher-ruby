@@ -28,7 +28,7 @@ def caesar_cipher(str, key)
     end
   end
 
-  puts newString.join
+  newString.join
 end
 
 caesar_cipher("What a string!", 5)
