@@ -10,4 +10,8 @@ describe '#caesar_cipher' do
   it 'wraps from z to a' do
     expect(caesar_cipher('xyz', 5)).to eql('cde')
   end
+
+  it 'maintains case' do
+    expect(caesar_cipher('hElLo', 1)).to eql('iFmMp')
+  end
 end
