@@ -14,4 +14,8 @@ describe '#caesar_cipher' do
   it 'maintains case' do
     expect(caesar_cipher('hElLo', 1)).to eql('iFmMp')
   end
+
+  it 'maintains punctuation' do
+    expect(caesar_cipher('hello, world!', 1)).to eql('ifmmp, xpsme!')
+  end
 end
